@@ -15,7 +15,8 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
         'Content-Type': 'application/json',
       },
     })
-      .then((resp) => resp.json().then((data) => setCategories(data)))
+      .then((resp) => resp.json())
+      .then((data) => setCategories(data))
       .catch((err) => console.log(err));
   }, []);
 
@@ -32,7 +33,7 @@ function ProjectForm({ btnText, handleSubmit, projectData }) {
       ...project,
       category: {
         id: e.target.value,
-        name: e.target.options[e.target.selectedIndex],
+        name: e.target.options[e.target.selectedIndex].text,
       },
     });
   }

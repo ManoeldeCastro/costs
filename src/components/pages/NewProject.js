@@ -13,16 +13,17 @@ function NewProject() {
     fetch('http://localhost:5000/projects', {
       method: 'POST',
       headers: {
-        'Content-Type': 'application/json',
+        'Content-type': 'application/json',
       },
       body: JSON.stringify(project),
     })
-      .then((resp) =>
-        resp.json().then((data) => {
-          console.log(data);
-          history('/projects', { message: 'projeto criado com sucesso' });
-        }),
-      )
+      .then((resp) => resp.json())
+      .then((data) => {
+        console.log(data);
+        history('/projects', {
+          state: { message: 'projeto criado com sucesso' },
+        });
+      })
       .catch((err) => console.log(err));
   }
 

@@ -1,104 +1,15 @@
 {
   "projects": [
     {
+      "name": "Teste",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "infra"
+      },
       "cost": 0,
       "services": [],
       "id": 1
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "123",
-      "budget": "123",
-      "cost": 0,
-      "services": [],
-      "id": 4
-    },
-    {
-      "name": "123",
-      "budget": "123",
-      "cost": 0,
-      "services": [],
-      "id": 5
-    },
-    {
-      "name": "123",
-      "budget": "123",
-      "category_id": "1",
-      "cost": 0,
-      "services": [],
-      "id": 6
-    },
-    {
-      "name": "teste",
-      "budget": "50000",
-      "category_id": "1",
-      "cost": 0,
-      "services": [],
-      "id": 7
-    },
-    {
-      "name": "teste",
-      "budget": "123",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 8
-    },
-    {
-      "name": "123",
-      "budget": "123",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 9
-    },
-    {
-      "name": "123124",
-      "budget": "213124",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 10
-    },
-    {
-      "name": "tra",
-      "budget": "123",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 11
-    },
-    {
-      "name": "123",
-      "budget": "123",
-      "category": {
-        "id": "1",
-        "name": "infra"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 12
     }
   ],
   "categories": [

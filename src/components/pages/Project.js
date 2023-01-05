@@ -13,6 +13,7 @@ function Project() {
   const { id } = useParams();
   const [project, setProject] = useState([]);
   const [showProjectForm, SetShowProjectForm] = useState(false);
+  const [showServiceForm, SetShowServiceForm] = useState(false);
   const [message, setMessage] = useState("")
   const [type, setType] = useState("")
 
@@ -33,6 +34,7 @@ function Project() {
   }, [id]);
 
   function editPost(project){
+    setMessage("")
     if(project.budget < project.cost){
       setMessage('O orçamento não pode ser menor que o custo do projeto!')
       setType("error")
@@ -61,6 +63,9 @@ function Project() {
   function toggleProjectForm() {
     SetShowProjectForm(!showProjectForm);
   }
+  function toggleServiceForm() {
+    SetShowServiceForm(!showServiceForm);
+  }
 
   return (
     <>
@@ -87,17 +92,38 @@ function Project() {
                 </div>
               ) : (
                 <div className={styles.project_info}>
-                  <ProjectForm handleSubmit={editPost} btnText="Concluir edição" projectData={project}/>
+                  <ProjectForm 
+                  handleSubmit={editPost} 
+                  btnText="Concluir edição" 
+                  projectData={project}
+                  />
                 </div>
               )}
             </div>
+            <div className={styles.service_form_container}>
+                <h2>Adicione um serviço:</h2>
+                <button onClick={toggleServiceForm} className={styles.btn}>
+                {!showServiceForm ? "Adicionar serviço" : 'Fechar'}
+              </button>
+              <div className={styles.project_info}>
+                {showProjectForm && (
+                  <div>
+                    <p>Form de serviço</p>
+                  </div>
+                )}
+              </div>
+            </div>
+            <h2>Serviços</h2>
+            <Container customClass="start">
+              <p>Itens de Serviços</p>
+            </Container>
           </Container>
         </div>
       ) : (
         <Loading />
       )}
     </>
-  );
+  )
 }
 
 export default Project;

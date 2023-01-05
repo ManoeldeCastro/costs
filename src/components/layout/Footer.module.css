@@ -13,6 +13,7 @@
   margin: 0 1em;
 
 }
+
 .social_list li:hover {
   color: #ffbb33;
 }
@@ -26,4 +27,7 @@
 }
 .copy_right a:visited {
   color: #ffbb33;
+}
+.copy_right a{
+  text-decoration: none;
 }

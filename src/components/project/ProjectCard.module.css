@@ -49,6 +49,7 @@
   margin-top: 1.2em;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
 }
 
 .project_card_actions a,

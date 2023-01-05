@@ -20,7 +20,7 @@ function Footer() {
       </p>
       <p className={styles.copy_right}>
         Projeto Desenvolvido por{' '}
-        <a href="https://github.com/ManoeldeCastro"> ManoeldeCasto</a>
+        <a href="https://github.com/ManoeldeCastro"> Manoel de Castro</a>
       </p>
     </footer>
   );

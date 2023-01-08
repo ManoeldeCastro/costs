@@ -6,17 +6,16 @@ import SubmitButton from '../form/SubmitButton';
 import styles from '../project/ProjectForm.module.css';
 
 
-function ServiceForm({ handleSumbit, btnText, projectData}) {
+function ServiceForm({ handleSubmit, btnText, projectData}) {
   const [service, setService] = useState({})
   
   function submit(e){
     e.preventDefault();
-    projectData.service.push(service)
-    handleSumbit(projectData)
+    projectData.services.push(service)
+    handleSubmit(projectData)
   }
   function handleChange(e){
     setService({ ...service, [e.target.name]: e.target.value})
-    
   }
   return (
     <form onSubmit={submit} className={styles.form}>
@@ -24,14 +23,14 @@ function ServiceForm({ handleSumbit, btnText, projectData}) {
       type="text"
       text="Nome do serviço"
       name="name"
-      placeholder="insira o nome do serviço"
+      placeholder="Insira o nome do serviço"
       handleOnChange={handleChange}
       />
       <Input 
       type="number"
       text="Custo do serviço"
       name="cost"
-      placeholder="insira o valor do serviço"
+      placeholder="Insira o valor do serviço"
       handleOnChange={handleChange}
       />
       <Input 

@@ -1,14 +1,27 @@
 {
   "projects": [
     {
-      "name": "Teste para Linkdin",
+      "name": "Teste para Linkedin",
       "budget": "50000",
       "category": {
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 200,
+      "services": [
+        {
+          "name": "Meu novo serviço",
+          "cost": "100",
+          "description": "Faz isso",
+          "id": "435317d6-54c7-4c17-b7db-3d70ea8254ad"
+        },
+        {
+          "name": "Meu novo serviço",
+          "cost": "100",
+          "description": "Faz isso",
+          "id": "435317d6-54c7-4c17-b7db-3d70ea8254ad"
+        }
+      ],
       "id": 2
     }
   ],

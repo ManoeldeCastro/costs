@@ -7,7 +7,7 @@
         "id": "2",
         "name": "Desenvolvimento"
       },
-      "cost": 200,
+      "cost": 5200,
       "services": [
         {
           "name": "Meu novo serviço",
@@ -20,6 +20,12 @@
           "cost": "100",
           "description": "Faz isso",
           "id": "435317d6-54c7-4c17-b7db-3d70ea8254ad"
+        },
+        {
+          "name": "contratar manoel",
+          "cost": "5000",
+          "description": "Programador junior",
+          "id": "92fb1170-b552-4ea4-96a3-3e0ac2062bb7"
         }
       ],
       "id": 2

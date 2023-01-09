@@ -88,8 +88,7 @@ function Project() {
     })
       .then((resp) => resp.json())
       .then((data) => {
-        //exibir os serviços
-        console.log(data);
+       SetShowServiceForm(false)
       })
       .catch((err) => console.log(err));
   }
